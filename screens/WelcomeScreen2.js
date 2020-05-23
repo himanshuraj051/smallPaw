@@ -6,9 +6,7 @@ import {
     TextInput,
     TouchableOpacity,
     TouchableWithoutFeedback,
-    Image,
-    Alert,
-    Modal
+    Image
 } from 'react-native';
 
 
