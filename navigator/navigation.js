@@ -1,7 +1,9 @@
 import * as React from "react";
+import {Text} from 'react-native'
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 import WelcomeScreen1 from "../screens/WelcomeScreen1";
 import WelcomeScreen2 from "../screens/WelcomeScreen2";
@@ -14,6 +16,7 @@ import Details from "../screens/Details";
 import SomethingWentWrongScreen from "../screens/SomethingWentWrongScreen";
 import SomethingWentWrong from "../screens/SomethingWentWrongScreen";
 import FeedScreen from "../screens/FeedScreen";
+import { StyleSheet } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -36,9 +39,13 @@ function Welcome({ navigation }) {
       <Stack.Screen name="login" component={LoginScreen} />
       <Stack.Screen name="wrong" component={SomethingWentWrong} />
       <Stack.Screen name="feed" component={FeedScreen} />
+      {/* <Stack.Screen name="bottom" component={BottomNavigator} /> */}
+
     </Stack.Navigator>
   );
 }
+
+
 
 export default function WelcomNavigator() {
   return (
@@ -47,3 +54,5 @@ export default function WelcomNavigator() {
     </NavigationContainer>
   );
 }
+
+

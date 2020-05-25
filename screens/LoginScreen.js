@@ -93,7 +93,8 @@ const LoginScreen = (props) => {
       appId: "1:494857074681:web:4b1daf3b568cd15cb32f28",
       measurementId: "G-KB416W51KH",
     };
-    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) 
+    firebase.initializeApp(firebaseConfig);
 
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {

@@ -35,7 +35,7 @@ const WelcomeScreen = props => {
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity style = {styles.skip} activeOpacity = {1} onPress = {() => {props.navigation.navigate('wrong')}}>
+                <TouchableOpacity style = {styles.skip} activeOpacity = {1} onPress = {() => {props.navigation.navigate('feed')}}>
                         <Text style = {styles.skipText}>Skip</Text>
                 </TouchableOpacity>
             </View>
